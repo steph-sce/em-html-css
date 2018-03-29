@@ -68,32 +68,180 @@ h1, h2, figcaption, blockquote, nav {
 }
 
 h1 {
+	color: white;
 	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 h2 {
 	font-size: 1.125rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 5px 0 10px 0;
 }
 
-/* HEADER */
+p {
+	line-height: 1.2;
+	margin: 10px 0;
+}
+
+/***** HEADER *****/
 header {
-  background: url('img/header.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: space-around;
+  background: url('img/bg-header.png') repeat-x;
 }
 
-header nav ul {
-  display: flex;
+header .wrapper {
+	background: url('img/header.png') no-repeat;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-header nav ul li {
-  list-style-type: none;
+h1 span {
+	color: #ff4f13;
 }
 
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-  padding-right: 10px;
+nav {
+	padding: 62px 0;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.25rem;
+	padding: .5rem .9375rem;
+	margin-left: .625rem;
+	transition: background-color .7s;
+	border-radius: 10px;	
+}
+
+nav a:visited {
+	color: #e6e6e6;
+}
+
+nav a:hover, nav a:focus {
+	background-color: #ff4f13;
+	color: white;
+	border-radius: 10px;
+}
+
+/***** BLOCQUOTE *****/
+blockquote {
+	color: #ff4f13;
+	font-size: 3rem;
+	text-align: center;
+	background: url('img/quote-open.png') no-repeat left top 30px, url('img/quote-close.png') no-repeat right bottom 30px;
+	padding: 65px 0;
+}
+
+.auteur {
+	font-size: 2rem;
+	margin-top: 10px;
+}
+
+/***** .gris *****/
+.gris {
+	background-color: #e6e6e6;
+}
+
+.gris .wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+
+.gris article {
+	width: 284px;
+}
+
+/***** .wrapper blanc*****/
+body>.wrapper article {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+
+.txt, figure {
+	width: 284px;
+}
+
+figcaption p {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+time {
+	font-style: italic;
+}
+
+/***** Footer *****/
+footer {
+	background-color: #393939;
+	color: white;
+	padding: 50px 0;
+}
+
+footer .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+address p:nth-of-type(2) {
+	font-style: italic;
+}
+
+/***** Formulaire ****/
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="email"], input[type="submit"] {
+	background-color: #e6e6e6;
+	border-radius: 10px;
+	border: none;
+	box-shadow: none;
+	padding: 5px 10px;
+}
+
+input[type="email"] {
+	margin-right: 5px;
+}
+
+/***** Réseaux *****/
+.reseaux {
+	align-self: center;
+}
+
+.reseaux a {
+	width: 58px;
+	height: 50px;
+	background-image: url('img/reseaux.png');
+	display: inline-block;
+}
+
+.twitter {
+	background-position: -58px 0;
+}
+
+.rss {
+	background-position: -116px 0;
+}
+
+.facebook:hover {
+	background-position: 0 -50px;
+}
+
+.twitter:hover {
+	background-position: -58px -50px;
+}
+
+.rss:hover {
+	background-position: -116px -50px;
 }
